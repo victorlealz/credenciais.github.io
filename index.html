@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Victor</title>
+
+  <style>
+    :root {
+      --black: #000000;
+      --white: #ffffff;
+      --blue: #173a63;
+      --muted: #a7b0ba;
+      --line: #202a35;
+      --max-width: 760px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--black);
+    }
+
+    body {
+      min-height: 100vh;
+      color: var(--white);
+      font-family: "Segoe UI Variable", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    main {
+      width: min(100% - 40px, var(--max-width));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    h1 {
+      margin: 0 0 44px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3.5rem, 18vw, 6.5rem);
+      line-height: 0.9;
+      letter-spacing: -0.055em;
+      font-weight: 700;
+    }
+
+    .details {
+      margin: 0;
+      border-top: 2px solid var(--blue);
+    }
+
+    .detail {
+      display: grid;
+      gap: 7px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .detail dt {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .detail dd {
+      margin: 0;
+      color: var(--white);
+      font-size: 1rem;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--white);
+      text-decoration-color: var(--blue);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      text-decoration-color: var(--white);
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    @media (min-width: 700px) {
+      main {
+        padding: 88px 0;
+      }
+
+      h1 {
+        margin-bottom: 56px;
+      }
+
+      .detail {
+        grid-template-columns: 120px 1fr;
+        gap: 28px;
+        align-items: baseline;
+        padding: 22px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- DADOS: edite somente os textos abaixo quando necessário. -->
+    <h1>Victor</h1>
+
+    <dl class="details">
+      <div class="detail">
+        <dt>Matrícula</dt>
+        <dd>195.549-7</dd>
+      </div>
+
+      <div class="detail">
+        <dt>E-mail Institucional</dt>
+        <dd><a href="mailto:victor.antunes@pc.pb.gov.br">victor.antunes@pc.pb.gov.br</a></dd>
+      </div>
+
+      <div class="detail">
+        <dt>Lotação</dt>
+        <dd>Delegacia Especializada de Crimes Cibernéticos - Polícia Civil da Paraíba (DECC/DG/PCPB)</dd>
+      </div>
+    </dl>
+  </main>
+</body>
+</html>
